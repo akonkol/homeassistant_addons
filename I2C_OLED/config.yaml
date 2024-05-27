@@ -38,42 +38,19 @@ devices:
   - /dev/i2c-19
   - /dev/i2c-20
 options:
-  Show_Static_Screen: true
-  Show_Welcome_Screen: true
-  Show_Splash_Screen: true
-  Show_Network_Screen: true
-  Show_CPU_Screen: true
-  Show_Memory_Screen: true
-  Show_Storage_Screen: true
-
-  Welcome_Screen_Text: "Welcome to {hostname}"
-  Static_Screen_Text: "Hassio verion {hassio.os.version} on {hostname} with IP {ip}"
-  Graceful_Exit_Text: "Exited at {datetime}"
-
+  Show_Static_Screen: false
+  Show_Welcome_Screen: false
+  Show_Splash_Screen: false
+  Show_Network_Screen: false
+  Show_CPU_Screen: false
+  Show_Memory_Screen: false
+  Show_Storage_Screen: false
+  Show_Summary_Screen: true
+  Summary_Screen_Text: "blah"
   Default_Duration: 10
-  Scroll_Amplitude: 6
   DateTime_Format: "%d/%m/%Y %H:%M:%S"
-  Static_Screen_Text_NoScroll: false
-  Temperature_Unit: "C"
+  Summary_Screen_Text_NoScroll: true
   Rotate: 0
-
-  Welcome_Screen_Duration: 5
-  Welcome_Screen_Limit: 2
-
-  Splash_Screen_Duration: 5
-  Splash_Screen_Limit: 0
-
-  Network_Screen_Duration: 10
-  Network_Screen_Limit: 0
-
-  CPU_Screen_Duration: 5
-  CPU_Screen_Limit: 0
-
-  Memory_Screen_Duration: 5
-  Memory_Screen_Limit: 0
-
-  Storage_Screen_Duration: 5
-  Storage_Screen_Limit: 0
 
   Debug_Mode: false
   I2C_bus: 1
@@ -87,6 +64,7 @@ schema:
   Show_CPU_Screen: bool
   Show_Memory_Screen: bool
   Show_Storage_Screen: bool
+  Show_Summary_Screen: bool
 
   Welcome_Screen_Text: "str?"
   Static_Screen_Text: "str?"
@@ -116,6 +94,13 @@ schema:
 
   Storage_Screen_Duration: "int?"
   Storage_Screen_Limit: "int?"
+
+  Summary_Screen_Duration: "int?"
+  Summary_Screen_Limit: "int?"
+  Summary_Screen_Text_NoScroll: bool
+  Summary_Screen_Text: "str?"
+
+
 
   Debug_Mode: bool
   I2C_bus: "int(0,20)"
