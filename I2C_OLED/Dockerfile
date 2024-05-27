@@ -12,6 +12,6 @@ RUN \
 RUN git clone --depth 1 https://github.com/akonkol/rpi_i2c_oled /I2C_OLED
 
 COPY run.sh /
-WORKDIR /data
+WORKDIR /
 RUN chmod a+x /run.sh
-CMD [ "/run.sh" ]
+CMD [ "sh", "/run.sh" ]
