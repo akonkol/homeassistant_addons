@@ -1,5 +1,5 @@
-name: "OLED Display"
-description: "display simple stuff"
+name: "Custom OLED Display"
+description: "Display hostname, ip, uptime"
 version: "0.0.1"
 slug: "oled_display"
 startup: services
