@@ -1,4 +1,4 @@
-#!/usr/bin/env bashio
+#!/usr/bin/with-contenv bashio
 CONFIG_PATH=/data/options.json
 
 bashio::log.info "Starting I2C OLED App..."
