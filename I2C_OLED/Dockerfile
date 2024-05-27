@@ -1,4 +1,5 @@
-FROM alpine:3.14
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
 # Install requirements for add-on
 RUN \
