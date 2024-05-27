@@ -1,6 +1,6 @@
 name: "Custom OLED Display"
 description: "Display hostname, ip, uptime"
-version: "0.0.2"
+version: "0.0.3"
 slug: "oled_display"
 startup: services
 boot: manual
